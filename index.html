@@ -17,6 +17,40 @@ img {
 	width: 100%;
 	align-items: top;
 }
+
+.container input {
+    position: fixed;	
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+	background-color: rgba(0,0,0,0.5);
+    }
+
+/* On mouse-over, add a grey background color */
+.container input ~ .checkmark {
+	z-index: 40;
+}
+
+.container input:checked ~ .checkmark {
+   display: none;
+}
+
+
+
+
+.pics {
+	display: block;
+	position: relative;
+	z-index: 0;
+	}
 body {
 	border: 10px solid #1f1f55;
 }
@@ -25,25 +59,30 @@ body {
 		background: rgba(125,114,5,.5);
 	}
 	div.pics {
-		display: none;
+		/*display: none;*/
 	}
 }
 </style>
 <body>
-	<div class="pics">
-		<img src="image/header.jpg" alt="">
-	</div>
-	<div class="pics">
-		<img src="image/hero.jpg" alt="">
-	</div>
-	<div class="pics">
-		<img src="image/acustica.jpg" alt="">
-	</div>
-	<div class="pics">
-			<img src="image/clasica.jpg" alt="">
-	</div>
-	<div>
-			<img src="image/footer.jpg" alt="">
+		<label class="container">
+			<input type="checkbox">
+			<span class="checkmark"></span>
+		</label>
+		<div class="pics">
+			<img src="image/header.jpg" alt="">
 		</div>
+		<div class="pics">
+			<img src="image/hero.jpg" alt="">
+		</div>
+		<div class="pics">
+			<img src="image/acustica.jpg" alt="">
+		</div>
+		<div class="pics">
+				<img src="image/clasica.jpg" alt="">
+		</div>
+		<div class="pics">
+				<img src="image/footer.jpg" alt="">
+		</div>
+	
 </body>
 </html>
