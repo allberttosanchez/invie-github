@@ -4,6 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+<script>
+	window.onload = function() {
+		setTimeout(function(){
+			var element = document.getElementById("body");
+			element.setAttribute("class","");
+		}, 2000)
+	};	
+</script>
 <style media="screen">
 * {
 	margin: 0;
@@ -14,16 +22,21 @@ img {
 	width: 100%;
 	align-items: top;
 }
+.hidden {
+	display: none;
+}
 </style>
 <body>
-	<div>
-		<img src="image/header.jpg" alt="">
-	</div>
-	<div>
-		<img src="image/hero.jpg" alt="">
-	</div>
-	<div>
-		<img src="image/acustica.jpg" alt="">
+	<div id="body" class="hidden">
+		<div>
+			<img src="image/header.jpg" alt="">
+		</div>
+		<div>
+			<img src="image/hero.jpg" alt="">
+		</div>
+		<div>
+			<img src="image/acustica.jpg" alt="">
+		</div>
 	</div>
 </body>
 </html>
