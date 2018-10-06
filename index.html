@@ -5,7 +5,12 @@
 	<title>Document</title>
 </head>
 <script>
-	alert("welcome to my page");
+	window.onload = function() {
+		setTimeout(function(){
+			var element = document.getElementById("body");
+			element.setAttribute("class","");
+		}, 2000)
+	};	
 </script>
 <style media="screen">
 * {
@@ -62,8 +67,12 @@ body {
 		/*display: none;*/
 	}
 }
+.hidden {
+	display: none;
+}
 </style>
 <body>
+	<div id="body" class="hidden">
 		<label class="container">
 			<input type="checkbox">
 			<span class="checkmark"></span>
@@ -83,6 +92,5 @@ body {
 		<div class="pics">
 				<img src="image/footer.jpg" alt="">
 		</div>
-	
-</body>
+	</div>
 </html>
