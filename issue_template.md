@@ -1,6 +1,6 @@
-## Descripción del Problema 
-_Describa el problema aqui._
+## Descripción del Problema.
+Describa el problema aquí.
 ## Pasos para replicar o reproducir el problema.
-_Indique los pasos que usted hace al aperecer el problema._
-## Version del Sistema | Programa | Pagina Web | Repositio donde ocurre el problema.
-_Diganos en que version de la app y la fecha en que le ocurrio el problema._
+Indique los pasos que usted hace al aperecer el problema.
+## Versión del Sistema | Programa | Pagina Web | Repositorio | donde ocurre el problema.
+Diganos en que versión de la app y la fecha en que ocurrió el problema.
